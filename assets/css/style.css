@@ -1,5 +1,5 @@
 :root{
-    font-family: 'montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 .cabecalho{
     background: #87ceeb;
@@ -87,7 +87,7 @@
 }
 
 .rodape{
-    color: #0A3871;
+    color: #2e2e2e;
     background: linear-gradient(#FEFEFE, #87ceeb 60%);
     display: flex;
     flex-direction: column;
