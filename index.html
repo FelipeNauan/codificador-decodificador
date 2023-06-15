@@ -4,52 +4,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css">   
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assets/css/reset.css">   
+    <link rel="stylesheet" href="./assets/css/style.css">
     <link href='//fonts.googleapis.com/css?family=Montserrat:thin,extra-light,light,100,200,300,400,500,600,700,800' 
-rel='stylesheet' type='text/css'>
+    rel='stylesheet' type='text/css'>
     <title>Decoder</title>
 </head>
 
 <body>
-    <header>
-        <div >
-            <img class= "logo" src="./imagens/logoAlura.png" alt="Logo da Alura">
-            <h1 class= "titulo-principal">Decoder</h1>
-         </div>
+    <header class="cabecalho">         
+            <img class= "logo" src="./assets/img/bola-espiao.png" alt="Logo decoder">
+            <h1 class= "titulo__principal">Decoder</h1>
     </header>
     
     <main>
-        <section>
-            <textarea class="text-area"  cols="41" rows="4" placeholder="Digite seu texto aqui..." autofocus></textarea>
-    
+        <section  class="entrada">  
             <div>
+                <textarea class="text__area"  cols="20" rows="7" placeholder="Digite seu texto aqui..." autofocus></textarea>
                 <h6 class="informacao">Apenas letras minúsculas e sem acento.</h6>
             </div>
-            <div class="botoes">
-                <button class="btn-encriptar" onclick="btnEncriptar()">Criptografar</button>
-                <button class="btn-desencriptar" onclick="btnDesencriptar()">Descriptografar</button>
+
+            
+            <div class="botao__entrada">
+                <button class="botao" onclick="btnEncriptar()">Criptografar</button>
+                <button class="botao" onclick="btnDesencriptar()">Descriptografar</button>
             </div>
         </section>
         
-        <section >
-            <textarea class="mensagem"  cols="20" rows="10"></textarea>
-            <button class="btn-copiar" onclick="copiar()">Copiar</button>
+        <section class="saida">
+            <div> 
+                <div class="background__saida"></div>                                             
+                <textarea class="mensagem" cols="20" rows="7" placeholder="Seu texto aparecerá aqui..."></textarea>
+                <h6 class="informacao">Clique no botão para copiar o texto.</h6>
+            </div>    
+            <div class="botao__saida">
+                <button class="botao" onclick="copiar()" >Copiar</button>                
+            </div>
         </section>
     </main>
-      
-   <footer class="rodape">
+
+    <footer class="rodape">
         <div class="icons">
-            <a href="https://www.linkedin.com/in/felipe-nauan/" target="_blank"><ion-icon name="logo-linkedin" ></ion-icon></a>
+            <a href="https://www.linkedin.com/in/felipe-nauan/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
             <a href="https://www.instagram.com/_nauaan/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
             <a href="https://github.com/FelipeNauan" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
         </div>
         <h3>Developed by Felipe Nauan</h3>
-     </footer>
+    </footer>
 
     <script src="script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  
+
 </body>
 </html>

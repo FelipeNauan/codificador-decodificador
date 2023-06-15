@@ -1,4 +1,4 @@
-const textArea = document.querySelector(".text-area");
+const textArea = document.querySelector(".text__area");
 const mensagem = document.querySelector(".mensagem");
 
 
@@ -52,5 +52,11 @@ function copiar() {
     textoCopiado.setSelectionRange(0, 99999);
     document.execCommand("copy");
     alert("Texto copiado!");
+    mensagem.value = "";
+    recarregarAPagina();
 }
+
+function recarregarAPagina(){
+    window.location.reload();
+} 
 

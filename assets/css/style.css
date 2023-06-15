@@ -1,0 +1,199 @@
+:root{
+    font-family: 'montserrat', sans-serif;
+}
+.cabecalho{
+    background: #87ceeb;
+    display: flex;
+    height: 4.5rem;
+}
+
+.logo{
+    height: 5rem;
+    width: 6rem;
+}
+
+.titulo__principal{
+    font-size: 3rem;
+    color: #0A3871;
+    padding: 1rem;
+    width: 100%;
+}
+
+.entrada, .saida{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 1rem 0 1rem;
+}
+
+.informacao{
+    color: #968a8a;
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+.text__area{
+    border: 1px solid #968a8a;
+    border-radius: 10px;
+    font-size: 1rem;
+    padding: 1rem;
+    width: calc(100% - 2rem);
+}
+
+.mensagem{
+    border: none;
+    font-size: 1rem;
+    padding: 1rem;
+    text-align: center;
+    width: calc(100% - 2rem);
+}
+
+
+::placeholder { 
+    color: #0A3871; 
+    font-size: 1rem;
+    text-align: center;
+}
+
+
+.botao{
+    border: 1px solid #0A3871;
+    border-radius: 10px;
+    color: #0A3871;
+    cursor: pointer;
+    font-size: 1.2rem;
+    height: 3rem;
+    transition: 1s;
+    width: 10rem;
+}
+
+.botao__entrada{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1rem 0;
+}
+
+.botao__saida{
+    margin: 1rem;
+    text-align: center;
+}
+
+.btn__copiar{
+    margin: 1rem;  
+}
+
+.icons ion-icon{
+    color: #0A3871;
+    padding: 0.5rem 0;
+}
+
+.rodape{
+    color: #0A3871;
+    background: linear-gradient(#FEFEFE, #87ceeb 60%);
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.background__saida{
+    display: none;
+}
+
+@media screen and (min-width: 768px){
+    .logo{
+        position: initial;
+    }
+    .titulo__principal{
+        text-align:left;
+    }
+    .cabecalho{
+        align-items: flex-end;
+        padding-bottom: 0;
+    }
+
+    .text__area, .mensagem{
+        margin-left: 4rem;
+        margin-right: 4rem;
+        width: calc(100% - 10rem);
+    }
+
+    .botao__entrada{
+        display: inline-block;
+        text-align: center;
+    }
+
+    ::placeholder { 
+        font-size: 1.5rem;
+    }
+
+    .rodape{
+        margin-top: 3rem;
+    }
+
+    .background__saida{
+    display: none;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    main{
+        display: flex;
+        justify-content: space-around;
+        height: 75vh;
+    }
+
+    .entrada, .saida{
+        display: inline-block;
+        margin-top: 5rem;
+        width: 30rem;
+    }
+
+    .text__area{
+        font-size: 3rem;
+        height: 20rem;
+        margin: 0;
+        width: 100%;
+    }
+
+    .mensagem{
+        font-size: 3rem;
+        height: 20rem;
+        margin: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .background__saida{
+        background-image: url(../img/Secret-Agent-Transparent.png);
+        background-repeat: no-repeat;
+        display: block;
+        height: 22rem;
+        opacity: .10;
+        position: absolute;
+        width: 514px;
+    }
+
+    .botao{
+        font-weight: bold;
+        transition: all .5s ease-in-out;
+    }
+
+    .botao:hover{
+        color: #FEFEFE;
+        cursor: pointer;
+        background-color: #0A3871;
+    }
+
+    .botao__entrada, .botao__saida{
+        display: flex;
+        justify-content: space-evenly;
+        padding-top: 2rem;
+        width: 100%;
+    }
+
+    .rodape{
+        margin-top: 5rem;
+    }
+}
+
